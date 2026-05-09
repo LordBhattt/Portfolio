@@ -196,7 +196,7 @@ export default function Projects() {
       {activeProject && activeProjectBullets.length > 0 ? (
         <div
           ref={overlayRef}
-          className='fixed inset-0 z-[100] flex items-center justify-center bg-[rgba(5,5,5,0.82)] p-4 backdrop-blur-sm'
+          className='fixed inset-0 z-[100] flex items-center justify-center overflow-hidden bg-[rgba(5,5,5,0.82)] p-4 backdrop-blur-sm'
           role='presentation'
           onMouseDown={(event) => {
             if (event.target === event.currentTarget) {
@@ -209,7 +209,8 @@ export default function Projects() {
             role='dialog'
             aria-modal='true'
             aria-labelledby={activeProjectHeadingId}
-            className='relative max-h-[calc(100vh-2rem)] w-full max-w-6xl overflow-y-auto rounded-[1.5rem] border border-[color:var(--dim)] bg-[color:var(--void)] p-5 shadow-[0_30px_90px_rgba(0,0,0,0.45)] md:p-7'
+            className='relative max-h-[80vh] w-full max-w-6xl overflow-y-auto overscroll-contain rounded-[1.5rem] border border-[color:var(--dim)] bg-[color:var(--void)] p-5 shadow-[0_30px_90px_rgba(0,0,0,0.45)] md:p-7'
+            onWheel={(e) => e.stopPropagation()}
           >
             <button
               type='button'
