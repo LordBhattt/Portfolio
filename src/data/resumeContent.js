@@ -1,21 +1,19 @@
-// PROOFREAD FIXES:
-// - Removed duplicate "Minor in" from shared.minor value (was "Minor in Financial & Strategic Management", now "Financial & Strategic Management") — fixes MINOR MINOR display in hero corners
-// - Updated competition org format: added em dashes for consistency with resume
-// - Verified all bullet points end with full stops
-// - Verified "4 independent projects" in both tech and nonTech summaries
-// - Verified summaryLine text matches user spec for both modes
-// - Verified hero subtitle is correct
-// - Verified no placeholder text exists
-// - Removed double spaces from loader string
-// - Verified SPCG first-mention format in leadership cards
-// - Certificate URL confirmed correct with noopener noreferrer
+// CONTENT SYNC — June 2026
+// Updated to match latest resume ground truth:
+// - 6 projects (added Jot, Ambar Aerobics; updated existing)
+// - 2 experience entries (added Ambar Aerobics Fitness)
+// - Updated skills across all categories for both modes
+// - Updated certifications
+// - Updated summaries and about text
+// - Updated contact email to personal
+// - Updated stats for 6 projects
 
 export const resumeContent = {
   shared: {
     name: "Harsh Bhatt",
     monogram: "HB",
     phone: "+91 8169151287",
-    email: "harsh.bhatt23@spit.ac.in",
+    email: "harsh31bhatt@gmail.com",
     linkedin: "linkedin.com/in/harshbhattt",
     linkedinUrl: "https://linkedin.com/in/harshbhattt",
     github: "github.com/LordBhattt",
@@ -40,6 +38,19 @@ export const resumeContent = {
     ],
     experience: [
       {
+        company: "Ambar Aerobics Fitness",
+        website: "ambaraerobicsfitness.com",
+        location: "Mumbai, India",
+        role: "Freelance Web Developer",
+        period: "Jan 2026 – Feb 2026",
+        dates: "JAN 2026 — FEB 2026",
+        summary: "Freelance web developer for a 16-branch Mumbai fitness institute; built a 5-page responsive website from scratch.",
+        bullets: [
+          "Built a 5-page responsive website using HTML, CSS, and JavaScript for a 16-branch Mumbai fitness institute; achieved sub-2s load times and a 96/100 PageSpeed score.",
+          "Integrated WhatsApp Business API for lead capture; client reported 40% increase in inbound leads within 60 days; JustDial listing advice drove a further 25% uplift in monthly enquiries."
+        ]
+      },
+      {
         company: "Seed Global Education",
         location: "Mumbai, India",
         role: "Marketing Intern",
@@ -47,8 +58,8 @@ export const resumeContent = {
         dates: "DEC 2024 — MAR 2025",
         summary: "Sole marketing intern overseeing HubSpot CRM pipeline across 500+ leads and campaign funnels.",
         bullets: [
-          "Sole marketing intern overseeing HubSpot CRM pipeline across 500+ leads; engineered automated lead-tracking workflows and campaign funnel dashboards that reduced manual reporting time by 40%.",
-          "Analysed campaign funnel data to identify drop-off stages; recommended targeting adjustments that improved qualified lead throughput by 30% and delivered monthly data-backed analytics reports to stakeholders."
+          "Sole marketing intern managing HubSpot CRM pipeline across 500+ leads; built automated lead-tracking workflows and campaign funnel dashboards that reduced manual reporting time by 40%.",
+          "Analysed campaign funnel data to identify drop-off stages; recommended targeting adjustments that improved qualified lead throughput by 30%; delivered monthly data-backed analytics reports to stakeholders."
         ],
         certificate: {
           label: "[Certificate] ↗",
@@ -85,18 +96,18 @@ export const resumeContent = {
         org: "Sardar Patel Consulting Group (SPCG)",
         period: "Aug 2025 – Present",
         descriptor: "Finance & Strategy",
-        bullet: "Built automated budget-tracking dashboards in Excel and SQL; analysed project cost data, tracked expenditure variance against forecasts, and optimized fund allocation across 5+ concurrent consulting engagements.",
+        bullet: "Built automated budget-tracking dashboards in Excel and SQL; optimised fund allocation across 5+ concurrent consulting engagements.",
         variants: {
           tech: {
             body: "Built automated budget-tracking dashboards in Excel and SQL.",
             bullets: [
-              "Built automated budget-tracking dashboards in Excel and SQL; analysed project cost data, tracked expenditure variance against forecasts, and optimized fund allocation across 5+ concurrent consulting engagements."
+              "Built automated budget-tracking dashboards in Excel and SQL; optimised fund allocation across 5+ concurrent consulting engagements."
             ]
           },
           nonTech: {
             body: "Built automated budget-tracking dashboards in Excel and SQL.",
             bullets: [
-              "Built automated budget-tracking dashboards in Excel and SQL; analysed project cost data, tracked expenditure variance against forecasts, and optimized fund allocation across 5+ concurrent consulting engagements."
+              "Built automated budget-tracking dashboards in Excel and SQL; optimised fund allocation across 5+ concurrent consulting engagements."
             ]
           }
         }
@@ -109,18 +120,18 @@ export const resumeContent = {
         org: "Rotaract Club of SPIT",
         period: "Aug 2024 – Jul 2025",
         descriptor: "Club Operations & Finance",
-        bullet: "Managed financial operations across 15+ events; built dynamic spreadsheet models, tracked budgets against actuals, coordinated vendor payments, and maintained audit-ready reconciliation records.",
+        bullet: "Managed finances across 15+ events; maintained audit-ready reconciliation records and coordinated vendor payments.",
         variants: {
           tech: {
-            body: "Managed financial operations across 15+ events.",
+            body: "Managed finances across 15+ events.",
             bullets: [
-              "Managed financial operations across 15+ events; built dynamic spreadsheet models, tracked budgets against actuals, coordinated vendor payments, and maintained audit-ready reconciliation records."
+              "Managed finances across 15+ events; maintained audit-ready reconciliation records and coordinated vendor payments."
             ]
           },
           nonTech: {
-            body: "Managed financial operations across 15+ events.",
+            body: "Managed finances across 15+ events.",
             bullets: [
-              "Managed financial operations across 15+ events; built dynamic spreadsheet models, tracked budgets against actuals, coordinated vendor payments, and maintained audit-ready reconciliation records."
+              "Managed finances across 15+ events; maintained audit-ready reconciliation records and coordinated vendor payments."
             ]
           }
         }
@@ -153,7 +164,7 @@ export const resumeContent = {
     },
     stats: [
       { value: 72000, suffix: "+", label: "Competed Against" },
-      { value: 4, suffix: "", label: "Independent Projects" },
+      { value: 6, suffix: "", label: "Independent Projects" },
       { value: 8, suffix: "", label: "Microservices Architected" },
       { value: 8, suffix: "", label: "Live Data Sources" },
       { value: 1000, suffix: "", label: "Simulation Paths" },
@@ -170,7 +181,7 @@ export const resumeContent = {
           { label: "Degree", value: "B.Tech CE, SPIT — Expected 2027" },
           { label: "Minor", value: "Financial & Strategic Management" },
           { label: "Location", value: "Mumbai, India" },
-          { label: "Contact", value: "harsh.bhatt23@spit.ac.in", href: "mailto:harsh.bhatt23@spit.ac.in" },
+          { label: "Contact", value: "harsh31bhatt@gmail.com", href: "mailto:harsh31bhatt@gmail.com" },
           { label: "GitHub", value: "GitHub", href: "https://github.com/LordBhattt" },
           { label: "LinkedIn", value: "LinkedIn", href: "https://linkedin.com/in/harshbhattt" }
         ]
@@ -199,13 +210,13 @@ export const resumeContent = {
   tech: {
     headline: "Builder across quant finance, RL, and full-stack systems.",
     heroHeadline: "WHERE CODE MEETS SYSTEMS",
-    summary: "B.Tech Computer Engineering student at SPIT (Expected 2027) with a minor in Financial and Strategic Management. National hackathon finalist (72,000+ participants), full-stack ML engineer across 4 independent projects, and Finance Head at SPCG. Proficient in Python, FastAPI, React, PyTorch, and distributed systems.",
+    summary: "B.Tech Computer Engineering student at SPIT (Expected 2027) with a minor in Financial and Strategic Management. National hackathon finalist (72,000+ participants), full-stack ML engineer, and Finance Head at SPCG. Proficient in Python, FastAPI, React, PyTorch, and distributed systems — with a parallel track in quantitative finance and data analytics.",
     summaryLine: "Full-stack ML builder in Python, FastAPI, React, PyTorch, and distributed systems.",
     skills: [
-      { label: "Concepts & Languages", items: ["DSA", "Python", "TypeScript", "SQL", "HTML"] },
-      { label: "Frameworks & Libraries", items: ["FastAPI", "React", "PyTorch", "scikit-learn", "CVXPY", "Pandas", "NumPy", "Tailwind CSS"] },
+      { label: "Concepts & Languages", items: ["Data Structures and Algorithms", "Python", "SQL", "HTML", "Power BI", "Tableau"] },
+      { label: "Frameworks & Libraries", items: ["FastAPI", "React", "PyTorch", "scikit-learn", "CVXPY", "Pandas", "NumPy", "Tailwind CSS", "Recharts"] },
       { label: "Databases & Infra", items: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Neo4j", "TimescaleDB", "Apache Kafka", "Apache Spark"] },
-      { label: "DevOps & Tools", items: ["Docker", "Kubernetes", "Git", "HuggingFace TRL", "Prometheus", "Grafana", "JWT", "WebSockets"] }
+      { label: "DevOps & Tools", items: ["Docker", "Kubernetes", "Git", "GitHub Actions", "CI/CD", "HuggingFace TRL", "Prometheus", "Grafana", "JWT", "WebSockets", "Vercel"] }
     ],
     profileStack: "Python · FastAPI · React · PyTorch · Distributed Systems",
     certifications: null,
@@ -213,24 +224,30 @@ export const resumeContent = {
       {
         key: "cascadeguard",
         title: "CascadeGuard",
+        badge: "National Finalist — Meta × PyTorch × HuggingFace × Scaler Hackathon 2026",
         stackTags: ["Python", "FastAPI", "React", "PyTorch", "HuggingFace TRL", "GRPO", "OpenEnv", "Docker"],
-        teaser: "RL agent trained to prevent cascade failures across 5 critical infrastructure sectors. National Finalist — 72,000+ participants.",
+        teaser: "Cross-Sector Infrastructure Cascade Failure RL Environment. National Finalist — 72,000+ participants.",
         github: "https://github.com/LordBhattt/CascadeGuard",
+        liveLinks: [
+          { label: "HF Environment", href: "https://huggingface.co/spaces/samarthdave0305/cascade-failure-env" },
+          { label: "Frontend UI", href: "https://huggingface.co/spaces/LordBhatt/CascadeGuardUI" }
+        ],
         diagram: {
           flow: ["OpenEnv Gym", "RL Agent\nDeepSeek-R1 32B · GRPO", "5-Sector Graph", "WebSocket", "React Dashboard"]
         },
         bullets: [
-          "Sole architect of an end-to-end RL solution; national finalist at Meta × PyTorch × HuggingFace × Scaler OpenEnv Hackathon, Bangalore 2026 (top teams from 72,000+ participants).",
-          "Fine-tuned DeepSeek-R1 32B via GRPO on a 5-sector cascade-failure simulation; achieved consistent policy improvement over random and greedy baseline agents on all reward curves.",
-          "Modeled a cross-sector interdependency graph (power, water, hospitals, telecom, finance) grounded in NERC 2003 and FERC 2021 data; 10 action types, partial observability, adversarial events.",
-          "Engineered FastAPI backend, React + Vite dashboard, and WebSocket event layer on an OpenEnv gym-style RL environment enabling live agent interaction and state visualization."
+          "National finalist (top teams from 72,000+ participants) at the Meta × PyTorch × HuggingFace × Scaler OpenEnv Hackathon as sole architect of the end-to-end RL solution.",
+          "Built a 5-sector infrastructure cascade simulation (power, water, hospitals, telecom, finance) grounded in NERC 2003 and FERC 2021 data.",
+          "Fine-tuned DeepSeek-R1 32B via GRPO on the environment; outperformed random and greedy baselines across all reward curves.",
+          "FastAPI backend, React + Vite dashboard, WebSocket event layer with live agent interaction and state visualization."
         ]
       },
       {
         key: "quantportfolio",
         title: "QuantPortfolio",
-        stackTags: ["FastAPI", "React", "PostgreSQL", "Redis", "PyTorch", "CVXPY", "scikit-learn", "APScheduler"],
-        teaser: "Full-stack portfolio intelligence platform with quant engine, ML forecasting, and live market data across stocks, crypto, ETFs, and mutual funds.",
+        status: "In Progress",
+        stackTags: ["FastAPI", "React", "PostgreSQL", "Redis", "PyTorch", "CVXPY", "scikit-learn", "Vercel"],
+        teaser: "Full-stack portfolio intelligence platform for stocks, crypto, ETFs, and mutual funds with quant engine, ML forecasting, and live market data.",
         github: "https://github.com/LordBhattt/QuantPortfolio",
         diagram: {
           flow: [
@@ -243,44 +260,76 @@ export const resumeContent = {
           ]
         },
         bullets: [
-          "Full-stack portfolio platform; ingested live market data from Yahoo Finance, CoinGecko, and AMFI with hourly refresh, Redis caching, and in-memory fallback on cache miss.",
-          "Black-Litterman return blending, constrained MVO via CVXPY, efficient frontier generation, HMM regime detection (bull/sideways/bear) retrained weekly on SPY.",
-          "LSTM return forecasting (PyTorch), Monte Carlo simulation (1,000 paths), VaR/CVaR, Sharpe/Sortino/Calmar ratios, Fama-French 5-factor OLS attribution on a React + Recharts dashboard.",
-          "Async FastAPI + PostgreSQL + JWT auth + APScheduler for ingestion and regime recalibration; Docker Compose with role-scoped access controls."
+          "Full-stack portfolio intelligence platform for stocks, crypto, ETFs, and mutual funds. Ingests live data from Yahoo Finance, CoinGecko, and AMFI with hourly refreshes and Redis caching with in-memory fallback.",
+          "Implements Black-Litterman return blending, constrained mean-variance optimisation (CVXPY), efficient frontier generation, and HMM-based regime detection (bull/sideways/bear) retrained weekly on SPY.",
+          "Delivers LSTM forecasts, Monte Carlo simulation (1,000 paths), VaR/CVaR, Sharpe/Sortino/Calmar ratios, and Fama-French 5-factor OLS attribution on a React + Recharts dashboard."
         ]
       },
       {
         key: "groundwork",
         title: "Groundwork",
-        stackTags: ["FastAPI", "Kafka", "Neo4j", "TimescaleDB", "Redis", "Apache Spark", "FinBERT", "Docker", "Kubernetes"],
-        teaser: "Real-time macro intelligence platform across 8 microservices — maps global shocks to sector impact, runs live DCF revaluation, and stress-tests portfolios.",
+        stackTags: ["Python", "FastAPI", "Kafka", "Neo4j", "TimescaleDB", "Redis", "Spark", "FinBERT", "Docker", "Kubernetes"],
+        teaser: "Macro Intelligence Terminal — real-time macro intelligence platform across 8 microservices ingesting FRED, SEC EDGAR, NewsAPI, and more.",
         github: "https://github.com/LordBhattt/Groundwork",
         diagram: {
           flow: ["8 Sources", "Kafka", ["Neo4j", "Spark", "FinBERT", "K-Means"], "TimescaleDB", "WebSocket", "React"],
           infra: ["Docker", "K8s", "Prometheus/Grafana"]
         },
         bullets: [
-          "8 Python microservices ingesting FRED, SEC EDGAR, NewsAPI, BLS, Treasury, GDELT, FMP, and Reddit; sub-second propagation via Kafka across 8 topics.",
-          "Neo4j knowledge graph maps macro shocks to affected sectors in real time; Apache Spark runs parallelised historical precedent analysis over multi-decade time series in TimescaleDB.",
-          "K-Means regime classifier on 15 FRED macro indicators; FinBERT sentiment scoring on SEC EDGAR filings; live WebSocket React frontend.",
-          "Containerised with Docker Compose and Kubernetes with horizontal pod autoscaling; monitored via Prometheus + Grafana."
+          "Real-time macro intelligence platform across 8 Python microservices ingesting FRED, SEC EDGAR, NewsAPI, BLS, Treasury, GDELT, FMP, and Reddit with sub-second propagation via Kafka.",
+          "Neo4j knowledge graph maps macro shocks to affected sectors; Apache Spark runs parallelised historical precedent analysis over multi-decade time series in TimescaleDB.",
+          "Enables live DCF revaluation with dynamic WACC, K-Means regime classification on 15 FRED indicators, and FinBERT sentiment scoring on SEC EDGAR filings, surfaced on a WebSocket React frontend.",
+          "Containerised with Docker Compose (dev) and Kubernetes (prod), monitored via Prometheus and Grafana."
+        ]
+      },
+      {
+        key: "jot",
+        title: "Jot",
+        stackTags: ["HTML", "Vanilla JS", "Python", "Web Workers", "Vercel Edge Middleware", "Upstash Redis"],
+        teaser: "English-like Programming Language & Browser Playground — no brackets, no semicolons, no quoted strings.",
+        github: "https://github.com/LordBhattt/Jot",
+        live: "https://jotcode.vercel.app",
+        diagram: {
+          flow: ["Jot Source", "JS Interpreter\n(Browser)", "Python CLI\n(Downloadable)", "Web Worker Sandbox", "Vercel Edge"]
+        },
+        bullets: [
+          "A custom programming language designed to read like spoken English — no brackets, no semicolons, no quoted strings.",
+          "Ships as a single 253 KB HTML file containing two independent interpreters (JS browser runtime + downloadable Python CLI), a full stdlib across 20 modules (math, graph, DP, matrix, trie, HTTP simulation, and more).",
+          "Web Worker sandbox for safe execution with hard kill/timeout, a multi-tab editor, and a 9-lesson interactive tutorial.",
+          "Vercel Edge Middleware rate limiting via Upstash Redis. 93-check CI suite covering syntax validation, XSS/CSP security, ARIA compliance, and live lesson execution."
         ]
       },
       {
         key: "trace",
         title: "TRACE",
-        stackTags: ["Flutter", "Node.js", "Express", "MongoDB", "Razorpay", "OSRM", "Firebase FCM", "JWT"],
-        teaser: "End-to-end mobile ride-booking app built solo — payments, real-time routing, push notifications, and an admin dashboard, all deployed in production.",
-        github: "https://github.com/LordBhattt/trace-payment-server",
+        stackTags: ["Flutter", "Node.js", "Express", "MongoDB", "Razorpay", "OSRM", "Firebase FCM"],
+        teaser: "Full-stack mobile ride-booking app built solo end-to-end with payments, real-time routing, push notifications, and admin dashboard.",
+        github: "https://github.com/LordBhattt/Trace",
         diagram: {
           flow: ["Flutter", "JWT", "Node/Express", ["MongoDB", "OSRM", "Razorpay", "Firebase FCM"], "Render"],
           stateMachine: ["Request", "Match", "Pickup", "In-Ride", "Complete", "Payment", "Settled"]
         },
         bullets: [
-          "Solo end-to-end full-stack mobile ride-booking app: Flutter frontend + Node.js/Express backend + MongoDB.",
-          "Razorpay payment integration with HMAC-verified order flow; OSRM for live routing and ETA calculation.",
-          "JWT auth, ride state machine with 8 statuses (Request → Match → Pickup → In-Ride → Complete → Payment → Settled → Cancelled), Firebase FCM push notifications for driver and rider.",
-          "Admin dashboard for ride management and oversight; entire app deployed on Render."
+          "Full-stack mobile ride-booking app built solo end-to-end. Flutter frontend + Node.js/Express backend + MongoDB.",
+          "Razorpay payment integration with HMAC-verified order flow, OSRM routing, JWT auth, 8-state ride state machine, Firebase FCM push notifications, and admin dashboard deployed on Render."
+        ]
+      },
+      {
+        key: "ambar-aerobics",
+        title: "Ambar Aerobics Fitness",
+        badge: "Freelance · Jan 2026 – Feb 2026",
+        stackTags: ["HTML", "CSS", "JavaScript", "WhatsApp Business API"],
+        teaser: "Client Website — 5-page responsive site for a 16-branch Mumbai fitness institute with WhatsApp lead capture.",
+        github: "https://github.com/LordBhattt/Ambar-Aerobics-Website",
+        live: "https://ambaraerobicsfitness.com",
+        diagram: {
+          flow: ["HTML/CSS/JS", "WhatsApp Business API", "JustDial Listing", "Client Dashboard"]
+        },
+        bullets: [
+          "Designed and developed a 5-page responsive website (Home, About, Courses, Gallery, Contact) from scratch for a Mumbai fitness institute with 16 branches.",
+          "Achieved sub-2s load times and a 96/100 PageSpeed score.",
+          "Integrated WhatsApp Business API for lead capture across trial class bookings and course enquiries — client reported a 40% increase in inbound leads within 60 days of launch.",
+          "JustDial listing advice contributed to a further 25% uplift in monthly enquiries."
         ]
       }
     ]
@@ -289,42 +338,49 @@ export const resumeContent = {
   nonTech: {
     headline: "Builder across quant finance, data systems, and financial strategy.",
     heroHeadline: "WHERE DATA MEETS DECISIONS",
-    summary: "B.Tech Computer Engineering student at SPIT (Expected 2027) with a minor in Financial & Strategic Management. National hackathon finalist (72,000+ participants), Finance Head at SPCG, and builder of 4 independent quant and data projects. Proficient in Python, SQL, Excel, Power BI, and quantitative finance methods including Black-Litterman, Monte Carlo, and DCF modelling.",
+    summary: "B.Tech Computer Engineering student at SPIT (Expected 2027) with a minor in Financial & Strategic Management. National hackathon finalist (72,000+ participants), Finance Head at SPCG, and full-stack ML engineer. Proficient in Python, SQL, Excel, Power BI, and quantitative finance methods including Black-Litterman, Monte Carlo, and DCF modelling.",
     summaryLine: "Quant and data builder — Black-Litterman, Monte Carlo, DCF, Excel, Power BI.",
     skills: [
-      { label: "Analytics & Data", items: ["Python (Pandas, NumPy, scikit-learn, statsmodels)", "SQL", "Excel", "Power BI"] },
+      { label: "Analytics & Data", items: ["Python (Pandas, NumPy, scikit-learn, statsmodels)", "SQL", "Excel", "Power BI", "Tableau"] },
       { label: "Quant & Finance", items: ["Black-Litterman", "MVO", "Monte Carlo", "VaR/CVaR", "Fama-French", "DCF Modelling", "WACC"] },
-      { label: "ML & NLP", items: ["PyTorch", "HuggingFace (FinBERT)", "K-Means Clustering", "HMM", "LSTM", "CVXPY"] },
+      { label: "ML & NLP", items: ["PyTorch", "HuggingFace (FinBERT)", "GRPO", "LSTM", "HMM", "K-Means Clustering", "CVXPY", "Monte Carlo"] },
       { label: "Infra & Tools", items: ["PostgreSQL", "MongoDB", "Redis", "Apache Kafka", "Spark", "Docker", "Git", "REST APIs"] }
     ],
     profileStack: "Python · SQL · Excel · Power BI · Black-Litterman · Monte Carlo · DCF",
     certifications: [
-      "The Complete Investment Banking Course — Udemy (2024)",
-      "Corporate Finance Fundamentals | Accounting Fundamentals for Corporate Finance | Reading Financial Statements — CFI / Coursera Specialization (2024)",
-      "Google Project Management Professional Certificate — Google / Coursera (2024)"
+      "The Complete Investment Banking Course — Udemy (In Progress)",
+      "Corporate Finance Fundamentals — CFI / Coursera Specialisation (2024)",
+      "Accounting Fundamentals for Corporate Finance — CFI / Coursera Specialisation (2024)",
+      "Reading Financial Statements — CFI / Coursera Specialisation (2024)"
     ],
     projects: [
       {
         key: "cascadeguard",
         title: "CascadeGuard",
+        badge: "National Finalist — Meta × PyTorch × HuggingFace × Scaler Hackathon 2026",
         stackTags: ["Python", "FastAPI", "React", "PyTorch", "HuggingFace TRL", "GRPO", "OpenEnv", "Docker"],
-        teaser: "RL agent trained to prevent cascade failures across 5 critical infrastructure sectors. National Finalist — 72,000+ participants.",
+        teaser: "Cross-Sector Infrastructure Cascade Failure RL Environment. National Finalist — 72,000+ participants.",
         github: "https://github.com/LordBhattt/CascadeGuard",
+        liveLinks: [
+          { label: "HF Environment", href: "https://huggingface.co/spaces/samarthdave0305/cascade-failure-env" },
+          { label: "Frontend UI", href: "https://huggingface.co/spaces/LordBhatt/CascadeGuardUI" }
+        ],
         diagram: {
           flow: ["OpenEnv Gym", "RL Agent\nDeepSeek-R1 32B · GRPO", "5-Sector Graph", "WebSocket", "React Dashboard"]
         },
         bullets: [
-          "National Finalist at one of India's largest AI hackathons (72,000+ participants); sole architect of the submitted solution.",
-          "Built a simulation of how failures cascade across power, water, hospitals, telecom, and finance sectors — and trained an AI agent to intervene and prevent collapse.",
-          "Grounded the model in real regulatory data (NERC 2003, FERC 2021); the agent learned to outperform both random and rule-based decision strategies.",
-          "Delivered a live React dashboard showing the agent's decisions in real time across all 5 sectors."
+          "National finalist (top teams from 72,000+ participants) at the Meta × PyTorch × HuggingFace × Scaler OpenEnv Hackathon as sole architect of the end-to-end RL solution.",
+          "Built a 5-sector infrastructure cascade simulation (power, water, hospitals, telecom, finance) grounded in NERC 2003 and FERC 2021 data.",
+          "Fine-tuned DeepSeek-R1 32B via GRPO on the environment; outperformed random and greedy baselines across all reward curves.",
+          "FastAPI backend, React + Vite dashboard, WebSocket event layer with live agent interaction and state visualization."
         ]
       },
       {
         key: "quantportfolio",
         title: "QuantPortfolio",
+        status: "In Progress",
         stackTags: ["Python", "FastAPI", "React", "PostgreSQL", "Redis", "PyTorch", "CVXPY", "scikit-learn"],
-        teaser: "Full-stack portfolio intelligence platform with quant engine, ML forecasting, and live market data across stocks, crypto, ETFs, and mutual funds.",
+        teaser: "Full-stack portfolio intelligence platform for stocks, crypto, ETFs, and mutual funds with quant engine, ML forecasting, and live market data.",
         github: "https://github.com/LordBhattt/QuantPortfolio",
         diagram: {
           flow: [
@@ -337,44 +393,76 @@ export const resumeContent = {
           ]
         },
         bullets: [
-          "Built an end-to-end portfolio analytics platform covering stocks, crypto, ETFs, and mutual funds with live data from Yahoo Finance, CoinGecko, and AMFI refreshed hourly.",
-          "Implemented Black-Litterman return blending and constrained mean-variance optimisation to generate efficient frontiers and optimal allocations.",
-          "Ran 1,000-path Monte Carlo simulations; computed VaR/CVaR, Sharpe/Sortino/Calmar ratios, and Fama-French 5-factor attribution — all displayed on an interactive dashboard.",
-          "HMM-based market regime detection (bull/sideways/bear) recalibrated weekly; LSTM model optionally feeds return views into the optimiser."
+          "Full-stack portfolio intelligence platform for stocks, crypto, ETFs, and mutual funds. Ingests live data from Yahoo Finance, CoinGecko, and AMFI with hourly refreshes and Redis caching with in-memory fallback.",
+          "Implements Black-Litterman return blending, constrained mean-variance optimisation (CVXPY), efficient frontier generation, and HMM-based regime detection (bull/sideways/bear) retrained weekly on SPY.",
+          "Delivers LSTM forecasts, Monte Carlo simulation (1,000 paths), VaR/CVaR, Sharpe/Sortino/Calmar ratios, and Fama-French 5-factor OLS attribution on a React + Recharts dashboard."
         ]
       },
       {
         key: "groundwork",
         title: "Groundwork — Macro Intelligence Terminal",
-        stackTags: ["Python", "Kafka", "Neo4j", "Spark", "FinBERT", "FastAPI"],
-        teaser: "Real-time macro intelligence platform — maps global shocks to sector impact, runs live DCF revaluation, and stress-tests portfolios across 10 scenarios.",
+        stackTags: ["Python", "FastAPI", "Kafka", "Neo4j", "TimescaleDB", "Redis", "Spark", "FinBERT", "Docker", "Kubernetes"],
+        teaser: "Real-time macro intelligence platform across 8 microservices — maps global shocks to sector impact, runs live DCF revaluation, and stress-tests portfolios.",
         github: "https://github.com/LordBhattt/Groundwork",
         diagram: {
           flow: ["8 Sources", "Kafka", ["Neo4j", "Spark", "FinBERT", "K-Means"], "TimescaleDB", "WebSocket", "React"],
           infra: ["Docker", "K8s", "Prometheus/Grafana"]
         },
         bullets: [
-          "Built a real-time macro intelligence terminal ingesting data from 8 sources — including FRED, SEC EDGAR, Treasury, and Reddit — to monitor the global economy as it moves.",
-          "Neo4j knowledge graph automatically maps macro shocks (rate hikes, CPI prints, geopolitical events) to the sectors they affect in real time.",
-          "Live DCF revaluation with dynamic WACC inputs; K-Means regime classification across 15 macro indicators; FinBERT NLP scoring of SEC earnings filings.",
-          "Stress-tests portfolios across 10 macro scenarios in parallel; full monitoring via Prometheus + Grafana."
+          "Real-time macro intelligence platform across 8 Python microservices ingesting FRED, SEC EDGAR, NewsAPI, BLS, Treasury, GDELT, FMP, and Reddit with sub-second propagation via Kafka.",
+          "Neo4j knowledge graph maps macro shocks to affected sectors; Apache Spark runs parallelised historical precedent analysis over multi-decade time series in TimescaleDB.",
+          "Enables live DCF revaluation with dynamic WACC, K-Means regime classification on 15 FRED indicators, and FinBERT sentiment scoring on SEC EDGAR filings, surfaced on a WebSocket React frontend.",
+          "Containerised with Docker Compose (dev) and Kubernetes (prod), monitored via Prometheus and Grafana."
+        ]
+      },
+      {
+        key: "jot",
+        title: "Jot",
+        stackTags: ["HTML", "Vanilla JS", "Python", "Web Workers", "Vercel Edge Middleware", "Upstash Redis"],
+        teaser: "English-like Programming Language & Browser Playground — no brackets, no semicolons, no quoted strings.",
+        github: "https://github.com/LordBhattt/Jot",
+        live: "https://jotcode.vercel.app",
+        diagram: {
+          flow: ["Jot Source", "JS Interpreter\n(Browser)", "Python CLI\n(Downloadable)", "Web Worker Sandbox", "Vercel Edge"]
+        },
+        bullets: [
+          "A custom programming language designed to read like spoken English — no brackets, no semicolons, no quoted strings.",
+          "Ships as a single 253 KB HTML file containing two independent interpreters (JS browser runtime + downloadable Python CLI), a full stdlib across 20 modules (math, graph, DP, matrix, trie, HTTP simulation, and more).",
+          "Web Worker sandbox for safe execution with hard kill/timeout, a multi-tab editor, and a 9-lesson interactive tutorial.",
+          "Vercel Edge Middleware rate limiting via Upstash Redis. 93-check CI suite covering syntax validation, XSS/CSP security, ARIA compliance, and live lesson execution."
         ]
       },
       {
         key: "trace",
         title: "TRACE",
-        stackTags: ["Flutter", "Node.js", "Express", "MongoDB", "Razorpay", "OSRM"],
-        teaser: "End-to-end mobile ride-booking app built solo — payments, real-time routing, push notifications, and an admin dashboard, all deployed in production.",
-        github: "https://github.com/LordBhattt/trace-payment-server",
+        stackTags: ["Flutter", "Node.js", "Express", "MongoDB", "Razorpay", "OSRM", "Firebase FCM"],
+        teaser: "Full-stack mobile ride-booking app built solo end-to-end with payments, real-time routing, push notifications, and admin dashboard.",
+        github: "https://github.com/LordBhattt/Trace",
         diagram: {
           flow: ["Flutter", "JWT", "Node/Express", ["MongoDB", "OSRM", "Razorpay", "Firebase FCM"], "Render"],
           stateMachine: ["Request", "Match", "Pickup", "In-Ride", "Complete", "Payment", "Settled"]
         },
         bullets: [
-          "Built a fully functional ride-booking app from scratch, solo — the equivalent of building a stripped-down Uber end-to-end.",
-          "Integrated Razorpay for real payments with secure verification; used OSRM (open-source routing) for live navigation and ETAs.",
-          "Designed the full ride lifecycle as an 8-state machine: Request → Match → Pickup → In-Ride → Complete → Payment → Settled → Cancelled — with real-time push notifications at every step via Firebase.",
-          "Shipped a working admin dashboard for monitoring all active rides; app live and deployed on Render."
+          "Full-stack mobile ride-booking app built solo end-to-end. Flutter frontend + Node.js/Express backend + MongoDB.",
+          "Razorpay payment integration with HMAC-verified order flow, OSRM routing, JWT auth, 8-state ride state machine, Firebase FCM push notifications, and admin dashboard deployed on Render."
+        ]
+      },
+      {
+        key: "ambar-aerobics",
+        title: "Ambar Aerobics Fitness",
+        badge: "Freelance · Jan 2026 – Feb 2026",
+        stackTags: ["HTML", "CSS", "JavaScript", "WhatsApp Business API"],
+        teaser: "Client Website — 5-page responsive site for a 16-branch Mumbai fitness institute with WhatsApp lead capture.",
+        github: "https://github.com/LordBhattt/Ambar-Aerobics-Website",
+        live: "https://ambaraerobicsfitness.com",
+        diagram: {
+          flow: ["HTML/CSS/JS", "WhatsApp Business API", "JustDial Listing", "Client Dashboard"]
+        },
+        bullets: [
+          "Designed and developed a 5-page responsive website (Home, About, Courses, Gallery, Contact) from scratch for a Mumbai fitness institute with 16 branches.",
+          "Achieved sub-2s load times and a 96/100 PageSpeed score.",
+          "Integrated WhatsApp Business API for lead capture across trial class bookings and course enquiries — client reported a 40% increase in inbound leads within 60 days of launch.",
+          "JustDial listing advice contributed to a further 25% uplift in monthly enquiries."
         ]
       }
     ]
