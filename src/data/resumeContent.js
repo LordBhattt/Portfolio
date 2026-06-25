@@ -48,7 +48,11 @@ export const resumeContent = {
         bullets: [
           "Built a 5-page responsive website using HTML, CSS, and JavaScript for a 16-branch Mumbai fitness institute; achieved sub-2s load times and a 96/100 PageSpeed score.",
           "Integrated WhatsApp Business API for lead capture; client reported 40% increase in inbound leads within 60 days; JustDial listing advice drove a further 25% uplift in monthly enquiries."
-        ]
+        ],
+        certificate: {
+          label: "[Certificate] ↗",
+          href: "https://drive.google.com/drive/folders/1N4tkYgLFdcq0XD55vxiMN402S8WKSC72?usp=drive_link"
+        }
       },
       {
         company: "Seed Global Education",
